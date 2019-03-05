@@ -21,7 +21,6 @@ touch "target/server.war"'''
         stage('Client') {
           agent {
             docker {
-              args '-u 0:0'
               image 'node'
             }
 
